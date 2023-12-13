@@ -1,0 +1,68 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.an-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    opacity: 0.1;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.home .the-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.home .the-content h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.4rem;
+}
+
+.home .the-content p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.the-content .btn {
+    margin: 1rem 3.3rem;
+}
+
+@media screen and (max-width:640px) {
+    .home .the-content h1 {
+        font-size: 3rem;
+        padding: 0.6rem 0 1.5rem;
+    }
+    
+    .home .the-content p {
+        font-size: 1.3rem;
+    }
+
+    .the-content .btn {
+        margin: 1rem 1.5rem;
+    }
+}

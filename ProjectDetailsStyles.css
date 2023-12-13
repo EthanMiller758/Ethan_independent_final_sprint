@@ -1,0 +1,30 @@
+.project-background {
+    width: 100%;
+    background: black;
+    height: 60vh;
+    position: relative;
+}
+
+.the-heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-background h1 {
+    font-size: 2.5rem;
+}
+
+.project-background p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .project-background h1 {
+        font-size: 2rem;
+    }
+}
